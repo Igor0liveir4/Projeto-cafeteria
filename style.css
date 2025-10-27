@@ -1,0 +1,61 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103; /* background*/
+    --bordap: 0.1rem solid rgba(255,255,255,0.3); /*borda padrão*/
+    font-size: 10px;
+}
+
+*{ /*Zerando o padrão do navegar*/
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2s linear;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+section { /* Como o tamanho vai se repetir varias vezes, essa formatação será padrão para todas as section*/
+    padding: 3rem 2rem; /* 3 rem encicma e embaixo e do lados 2 rem */
+    margin: 0 auto; /*É um atalho, encima e embaixo é zero, e direita e esquerda é auto*/
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--main-color);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5;
+}
+
+.navbar {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
