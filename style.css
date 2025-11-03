@@ -88,7 +88,7 @@ section { /* Como o tamanho vai se repetir varias vezes, essa formatação será
     background-size: cover; /*Sempre vai cobrir o espaço todo (ajustar uma imagem de fundo e cobrir toda a area)*/
  }
 
- .home-container section {
+.home-container section {
     display: flex;
     align-items: center;
     min-width: 100vh; /*Eu quero que o minimo que ele ocupe é a tela toda*/
@@ -113,3 +113,19 @@ section { /* Como o tamanho vai se repetir varias vezes, essa formatação será
     padding: 3rem 0; /*encima e embaixo 0 dos dois lados*/
 }
 
+.title {
+    font-size: 5rem;
+    color: var(--main-color)
+}
+
+.title span {
+    color: #fff
+}
+
+
+.about .row {
+    display:  flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 2.5;
+}
